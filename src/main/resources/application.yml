@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: Jwt_Authentication
+
+#cogiguration to enable the colour full logging in console
+  output:
+    ansi:
+      enabled: always
+
+
+#h2 db  related configuration
+  datasource:
+    url: jdbc:h2:mem:dev_db
+    username: vijay
+    password: vijay
+
+# mysql configuration
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/jwtapi?user=root&password=948270
+
+
+#jpa related configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+
+
